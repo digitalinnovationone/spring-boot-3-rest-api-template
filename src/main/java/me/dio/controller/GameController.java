@@ -16,7 +16,6 @@ import me.dio.service.GameService;
 
 @RestController
 @RequestMapping("/games")
-@CrossOrigin
 @Tag(name = "Game Controller", description = "APIs for managing games")
 public class GameController {
 
