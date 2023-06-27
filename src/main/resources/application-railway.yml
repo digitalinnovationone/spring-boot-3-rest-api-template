@@ -11,14 +11,6 @@ spring:
       hibernate:
         format_sql: true
         dialect: org.hibernate.dialect.PostgreSQLDialect
-springdoc:
-  swagger-ui:
-    path: /swagger-ui.html
-    servers:
-      - url: https://heroes-production.up.railway.app
-        description: Servidor de produção
-
-
 
 # RAILWAY_DB_HOST = containers-us-west-169.railway.app
 # RAILWAY_DB_PORT = 6620
