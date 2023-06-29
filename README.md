@@ -187,14 +187,13 @@ Contributions are welcome! If you encounter any issues or have suggestions for i
 ## License
 
 This project is licensed under the MIT License. Please refer to
-the <a href="https://github.com/cami-la/url-shortener-preview/blob/3eb25645b0ca1a1ee8bd8b5de947c11f5a6d42ba/LICENSE.md">(
-LICENSE)</a> file for details.
+the <a href="https://github.com/digitalinnovationone/spring-boot-3-rest-api-template/blob/main/LICENSE.md">(LICENSE)</a> file for details.
 <hr>
 
 ## Authors
 
-- [Camila Cavalcante](https://www.linkedin.com/in/cami-la/)
-  ![Camila Cavalcante](https://avatars.githubusercontent.com/u/64323124?v=4&s=100)
+![Camila Cavalcante](https://avatars.githubusercontent.com/u/64323124?v=4&s=100)<br>
+[Camila Cavalcante](https://www.linkedin.com/in/cami-la/)
 
-- [Venilton FalvoJr](https://www.linkedin.com/in/falvojr/)
-  ![Venilton FalvoJr](https://avatars.githubusercontent.com/u/730492?v=4&s=100)
+![Venilton FalvoJr](https://avatars.githubusercontent.com/u/730492?v=4&s=100)<br>
+[Venilton FalvoJr](https://www.linkedin.com/in/falvojr/)
