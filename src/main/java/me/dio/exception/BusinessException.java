@@ -1,4 +1,4 @@
-package me.dio.service.exception;
+package me.dio.exception;
 
 public class BusinessException extends RuntimeException {
 

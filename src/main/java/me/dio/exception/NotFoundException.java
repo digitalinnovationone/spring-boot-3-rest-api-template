@@ -1,4 +1,4 @@
-package me.dio.service.exception;
+package me.dio.exception;
 
 public class NotFoundException extends RuntimeException {
 
