@@ -1,7 +1,6 @@
 spring:
   datasource:
-    driverClassName: org.h2.Driver
-    url: jdbc:h2:mem:games
+    url: jdbc:h2:mem:heroes
     username: rafa
     password:
   jpa:
@@ -18,10 +17,3 @@ spring:
       settings:
         trace: false
         web-allow-others: false
-springdoc:
-  swagger-ui:
-    path: /swagger-ui.html
-
-# https://docs.spring.io/spring-boot/docs/2.0.x/reference/html/common-application-properties.html
-
-# spring.profiles.active=dev
