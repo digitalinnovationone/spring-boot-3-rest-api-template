@@ -49,7 +49,7 @@ public class HeroServiceImpl implements HeroService {
 
     public void vote(Long id) {
         Hero hero = this.findById(id);
-        hero.setXp(hero.getXp() + 1);
+        hero.setXp(hero.getXp() + 2);
         heroRepository.save(hero);
     }
 }
