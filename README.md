@@ -99,8 +99,8 @@ This project is licensed under the MIT License. Please refer to the <a href="htt
 
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/falvojr"><img src="https://avatars.githubusercontent.com/u/730492?v=4&s=100" width="100px;" alt=""/><br /><sub><b>Venilton FalvoJr</b></sub></a><br /><a href="https://www.linkedin.com/in/falvojr/">LinkedIn</a></td>
-    <td align="center"><a href="https://github.com/rafaskb"><img src="https://avatars.githubusercontent.com/u/2331058?v=4&s=100" width="100px;" alt=""/><br /><sub><b>Rafa Skoberg</b></sub></a><br /><a href="https://www.linkedin.com/in/rafaskoberg/">LinkedIn</a></td>
-    <td align="center"><a href="https://github.com/cami-la"><img src="https://avatars.githubusercontent.com/u/64323124?v=4&s=100" width="100px;" alt=""/><br /><sub><b>Camila Cavalcante</b></sub></a><br /><a href="https://www.linkedin.com/in/cami-la/">LinkedIn</a></td>
+    <td align="center"><a href="https://github.com/falvojr"><img src="https://avatars.githubusercontent.com/u/730492?v=4&s=100" width="100px;" alt=""/><br/><strong>Venilton FalvoJr</strong></a><br/><a href="https://www.linkedin.com/in/falvojr/">LinkedIn</a></td>
+    <td align="center"><a href="https://github.com/cami-la"><img src="https://avatars.githubusercontent.com/u/64323124?v=4&s=100" width="100px;" alt=""/><br/><strong>Camila Cavalcante</strong></a><br/><a href="https://www.linkedin.com/in/cami-la/">LinkedIn</a></td>
+    <td align="center"><a href="https://github.com/rafaskb"><img src="https://avatars.githubusercontent.com/u/2331058?v=4&s=100" width="100px;" alt=""/><br/><strong>Rafa Skoberg</strong></a><br/><a href="https://www.linkedin.com/in/rafaskoberg/">LinkedIn</a></td>
   </tr>
 </table>
