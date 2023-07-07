@@ -73,7 +73,7 @@ These instructions guide you through cloning the repository and starting the app
 
 The project focuses on a Heroes API as an example, which includes basic CRUD operations and gain experience (XP) system. It adheres to the best practices of RESTful principles, such as idempotent operations and the use of appropriate HTTP status codes.
 
-Exception handling is globally managed with a `@RestControllerAdvice to ensure consistent handling of exceptions throughout the entire application.
+Exception handling is globally managed with a `@RestControllerAdvice` to ensure consistent handling of exceptions throughout the entire application.
 
 The project also includes the setup for an H2 database (an in-memory database) for testing purposes and development environment. For the production environment on Railway, PostgreSQL database is used.
 
