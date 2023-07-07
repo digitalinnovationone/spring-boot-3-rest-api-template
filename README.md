@@ -29,7 +29,7 @@ As an edtech company, DIO is committed to providing valuable resources for devel
 - [Setup](#setup)
 - [Project Details](#project-details)
 - [API Usage (Swagger UI Documentation)](#api-usage-swagger-ui-documentation)
-- [Hosting on Railway.app](#hosting-on-railwayapp)
+- [Hosting on Railway.app](#hosting-on-railway)
 - [Contribution](#contribution)
 - [License](#license)
 - [Authors](#authors)
@@ -81,7 +81,7 @@ The project also includes the setup for an H2 database (an in-memory database) f
 
 The API documentation can be found on Swagger UI. To view it, please visit: [Swagger UI](http://localhost:8080/swagger-ui.html).
 
-## Hosting on Railway.app
+## Hosting on Railway
 
 Both this project and your PostgreSQL database are hosted on [Railway.app](https://railway.app/). To access our demo application, visit:
 - Development Environment: [https://[your-public-domain]-dev.up.railway.app/swagger-ui.html](https://heroes-api-veni-dev.up.railway.app/swagger-ui.html)
