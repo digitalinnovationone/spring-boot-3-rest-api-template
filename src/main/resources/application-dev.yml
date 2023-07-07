@@ -5,6 +5,7 @@ spring:
     password:
   jpa:
     show-sql: true
+    open-in-view: false
     hibernate:
       ddl-auto: update
     properties:

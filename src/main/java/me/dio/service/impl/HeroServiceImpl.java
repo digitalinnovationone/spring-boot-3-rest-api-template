@@ -1,12 +1,12 @@
 package me.dio.service.impl;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import me.dio.exception.BusinessException;
 import me.dio.exception.NotFoundException;
 import me.dio.model.Hero;
 import me.dio.repository.HeroRepository;
@@ -21,9 +21,8 @@ public class HeroServiceImpl implements HeroService {
 
     @Transactional(readOnly = true)
     public List<Hero> findAll() {
-        List<Hero> games = new ArrayList<>();
-        this.heroRepository.findAll().forEach(games::add);
-        return games;
+        // TODO: Sort Heroes by "xp" descending.
+        return this.heroRepository.findAll();
     }
 
     @Transactional(readOnly = true)
@@ -31,25 +30,27 @@ public class HeroServiceImpl implements HeroService {
         return this.heroRepository.findById(id).orElseThrow(NotFoundException::new);
     }
 
-    public Hero create(Hero entity) {
-        return this.heroRepository.save(entity);
+    public Hero create(Hero heroToCreate) {
+        return this.heroRepository.save(heroToCreate);
     }
 
-    public Hero update(Long id, Hero entity) {
-        // Ensure idempotency by retrieving the record by ID.
-        Hero existingHero = this.findById(id);
-        entity.setId(existingHero.getId());
-        return this.heroRepository.save(entity);
+    public Hero update(Long id, Hero heroToUpdate) {
+        Hero dbHero = this.findById(id);
+        if (!dbHero.getId().equals(heroToUpdate.getId())) {
+            throw new BusinessException("Update IDs must be the same.");
+        }
+        // TODO: Make sure "xp" is not changed. In practice, only "name" can be changed.
+        return this.heroRepository.save(heroToUpdate);
     }
 
     public void delete(Long id) {
-        Hero hero = this.findById(id);
-        this.heroRepository.delete(hero);
+        Hero dbHero = this.findById(id);
+        this.heroRepository.delete(dbHero);
     }
 
-    public void vote(Long id) {
-        Hero hero = this.findById(id);
-        hero.setXp(hero.getXp() + 2);
-        heroRepository.save(hero);
+    public void increaseXp(Long id) {
+        Hero dbHero = this.findById(id);
+        dbHero.setXp(dbHero.getXp() + 1);
+        heroRepository.save(dbHero);
     }
 }
