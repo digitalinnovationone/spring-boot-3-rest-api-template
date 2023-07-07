@@ -47,15 +47,15 @@ As an edtech company, DIO is committed to providing valuable resources for devel
 
 The project is organized into several packages, each serving a specific purpose:
 
-- `controller`: The 'controller' package contains our Rest Controllers. Here, we expose our endpoints, following the REST architectural style. DTOs are used in this layer to define the consumption interfaces appropriately, avoiding the exposure of unnecessary model attributes.
+- `controller`: This package contains our Rest Controllers. Here, we expose our endpoints, following the REST architectural style. DTOs are used in this layer to define the consumption interfaces appropriately, avoiding the exposure of unnecessary model attributes.
 
-- `exception`: The 'exception' package is where we define our custom exceptions and a global exception handler for dealing with Spring's exceptions.
+- `exception`: define our custom exceptions and a global exception handler for dealing with Spring's exceptions.
 
-- `model`: The 'model' package is where our entities are defined, using JPA (Jakarta) annotations for ORM with our SQL database.
+- `model`: where our entities are defined, using JPA (Jakarta) annotations for ORM with our SQL database.
 
-- `repository`: In the 'repository' package, we handle data access using interfaces provided by Spring Data JPA.
+- `repository`: In this package, we handle data access using interfaces provided by Spring Data JPA.
 
-- `service`: The 'service' package is where our business logic lives. Here we validate our data, handle business exceptions, and manage access to our SQL database through repositories.
+- `service`: where our business logic lives. Here we validate our data, handle business exceptions, and manage access to our SQL database through repositories.
 
 - `Application.java`: This is the main class to run our project. It initializes our Spring application and connects all the components together.
 
