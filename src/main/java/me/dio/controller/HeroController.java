@@ -95,4 +95,16 @@ public record HeroController(HeroService heroService) {
         heroService.increaseXp(id);
         return ResponseEntity.noContent().build();
     }
+
+    @PatchMapping("/{id}/mission{qt}")
+    @Operation(summary = "Increase hero XP with mission quantity", description = "Up XP to an existing hero based on its ID")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "204", description = "Mission(s) registered successfully"),
+            @ApiResponse(responseCode = "404", description = "Hero not found"),
+            @ApiResponse(responseCode = "406", description = "Mission quantity is not allowed")
+    })
+    public ResponseEntity<Void> mission(@PathVariable Long id, @PathVariable Integer qt){
+        heroService.addingMissionQuantity(id, qt);
+        return ResponseEntity.noContent().build();
+    }
 }
