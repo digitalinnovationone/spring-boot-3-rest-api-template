@@ -32,6 +32,7 @@ public class HeroServiceImpl implements HeroService {
     }
 
     public Hero create(Hero heroToCreate) {
+        heroToCreate.setXp(0);
         return this.heroRepository.save(heroToCreate);
     }
 
