@@ -38,7 +38,7 @@ As an edtech company, DIO is committed to providing valuable resources for devel
 
 - **Java 17**: Leveraging the latest LTS version of Java, improving readability and efficiency.
 - **Spring Boot 3**: An upgraded version of Spring Boot, enhancing developer productivity with its auto-configuration
-  feature.
+  feature. Generated using [Spring Initializr](https://start.spring.io/#!type=gradle-project&language=java&platformVersion=3.1.1&packaging=jar&jvmVersion=17&groupId=me.dio&artifactId=spring-boot-3-rest-api-template&name=spring-boot-3-rest-api-template&description=DIO%20Spring%20Boot%20RESTful%20API%20Template&packageName=me.dio&dependencies=web,data-jpa,h2,postgresql).
 - **Spring Data JPA**: Simplifying the database access layer by reducing the boilerplate code.
 - **OpenAPI (Swagger)**: Integrated with OpenAPI 3, enabling seamless API documentation for better understanding and
   testing.
