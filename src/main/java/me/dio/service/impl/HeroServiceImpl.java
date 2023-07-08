@@ -53,7 +53,7 @@ public class HeroServiceImpl implements HeroService {
 
     public void increaseXp(Long id) {
         Hero dbHero = this.findById(id);
-        dbHero.setXp(dbHero.getXp() + 1);
+        dbHero.setXp(dbHero.getXp() + 2);
         heroRepository.save(dbHero);
     }
 }
