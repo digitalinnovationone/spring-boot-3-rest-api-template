@@ -18,5 +18,10 @@ public class GlobalExceptionHandler {
   public ResponseEntity<String> handleNoContentException() {
     return new ResponseEntity<>("Resource ID not found.", HttpStatus.NOT_FOUND);
   }
+
+  @ExceptionHandler(MissionException.class)
+  public ResponseEntity<String> handleMissionException(MissionException exception){
+    return new ResponseEntity<>(exception.getMessage(), HttpStatus.NOT_ACCEPTABLE);
+  }
 }
 

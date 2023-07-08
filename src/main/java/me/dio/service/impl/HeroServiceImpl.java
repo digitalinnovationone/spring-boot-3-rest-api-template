@@ -2,6 +2,7 @@ package me.dio.service.impl;
 
 import java.util.List;
 
+import me.dio.exception.MissionException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
@@ -54,6 +55,30 @@ public class HeroServiceImpl implements HeroService {
     public void increaseXp(Long id) {
         Hero dbHero = this.findById(id);
         dbHero.setXp(dbHero.getXp() + 2);
+        heroRepository.save(dbHero);
+    }
+
+    /**
+     * Rules:
+     *  - if the qt variable is lower or equals than 100, XP receives XP + qt * 50
+     *  - if the qt variable is greater than 100, XP receives XP + qt * 25
+     *
+     * @param id Hero's id
+     * @param qt Hero's mission quantity
+     */
+    @Override
+    public void addingMissionQuantity(Long id, Integer qt) {
+        if( qt <= 0 ){
+            throw new MissionException("Mission quantity must be greater than 0.");
+        }
+
+        Hero dbHero = this.findById(id);
+        dbHero.setXp(
+                qt <= 100 ?
+                        (dbHero.getXp() + qt * 50)
+                        :
+                        (dbHero.getXp() + qt * 25)
+        );
         heroRepository.save(dbHero);
     }
 }
